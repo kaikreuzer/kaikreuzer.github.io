@@ -1,0 +1,13 @@
+---
+layout: post
+title: TLAs around SOA - is it all just hype? (Part 3)
+date: '2007-07-01T17:23:00.001+02:00'
+author: Kai Kreuzer
+tags:
+- EDA
+modified_time: '2010-02-25T10:17:09.025+01:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-6088395842721705532
+blogger_orig_url: http://kaikreuzer.blogspot.com/2007/07/tlas-around-soa-is-it-all-just-hype.html
+---
+
+Besides the rather negative impressions of JBI and BPEL (see parts 1 and 2), I also enjoyed a refreshingly positive session of Gregor Hohpe from Google about Event Driven Architectures (EDA). Having heard of them so far only in the context of SOA, I didn't expect much at all. Instead, Gregor presented a pragmatic example of how EDA can work - without any complicated containers, service infrastructure or anything like that - simply with pure Java. The core consisted out of one single class called "Channel" which allowed sending and subscribing events. On this he has built an application that is very loosely coupled as there are hardly any method invocations. Instead, all application flow is caused by the exchange of events. He pointed out some big benefits like the possibility to easily switch between two modules with the same functionality or even run them at the same time for test purposes. Furthermore it is possible to replay the event chain and therefore reproduce states from the past. And of course, this programming model makes logging as easy as with AOP (or even easier?) as all one needs is a class that subscribes and logs simply all events.<br />Certainly this approach is not applicable to any kind of problem, but it is definitely worth to be considered in many cases.

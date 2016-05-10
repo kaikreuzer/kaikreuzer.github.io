@@ -1,0 +1,13 @@
+---
+layout: post
+title: The Eclipse Plugin Build Nightmare
+date: '2007-10-12T09:10:00.001+02:00'
+author: Kai Kreuzer
+tags:
+- eclipse
+modified_time: '2010-02-25T10:11:19.817+01:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-5944737958481180042
+blogger_orig_url: http://kaikreuzer.blogspot.com/2007/10/eclipse-plugin-build-nightmare.html
+---
+
+A couple of weeks ago, I was still naive. Having build an Eclipse RCP application it was easy to use the PDE tools "product export" or the "Build all" of an update site project to build and distribute our application. Ok, I had to fiddle around a bit with the right dependency settings for my product definition, but it was all no rocket science.<br /><br />Now all that was left was to include this build in our continuous integration server. My primitive belief was that there should be a simple API access to immitate the "button click" that I usually did manually. I could not have been more wrong.<br /><br />I had my first doubts after it took one of our most gifted developers a couple of weeks to perform this job for our proprietary environment. Clearly I blamed our environment and could have bet that it is all so much simpler with any common CI system.<br /><br />It was just until this week at the <a href="http://eclipsesummit.org/summiteurope2007/">Eclipse Summit Europe</a> that again had to revise my opinion on things: No matter who I talked to, nobody ever found a quick and easy solution for building their plugins. There is no stable solution for Maven, the PluginBuilder does not relief from intensive maintenance and even the official Eclipse projects do not have any common ground to "build" on. What explains why you can hardly find any snapshots published to an update site...<br /><br />The Eclipse Foundation has already identified this as a "pain point" and apparently at least the documentation has already improved with the Europa release. Let's hope that there will be also more improvements on the tools side to make this task something that does not hinder us from being productive for weeks.

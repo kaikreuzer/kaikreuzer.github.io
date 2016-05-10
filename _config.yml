@@ -1,0 +1,19 @@
+# Site settings
+title: Kai Kreuzer
+header-img: img/home-bg.jpg
+email: kai@openhab.org
+copyright_name: Kai Kreuzer
+description: "Java Software Architect and Home Automation Professional. Founder of openHAB.org and Project Lead of Eclipse SmartHome."
+baseurl: ""
+url: "http://www.kaikreuzer.de"
+twitter_username: kaikreuzer
+github_username:  kaikreuzer
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]

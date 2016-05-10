@@ -1,0 +1,12 @@
+---
+layout: post
+title: RAP as the next GWT?
+date: '2007-10-11T16:57:00.000+02:00'
+author: Kai Kreuzer
+tags: 
+modified_time: '2007-10-11T17:12:23.225+02:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-5838609265407592145
+blogger_orig_url: http://kaikreuzer.blogspot.com/2007/10/rap-as-next-gwt.html
+---
+
+One of the projects I recently got to know about is the <a href="http://www.eclipse.org/proposals/rap/">Rich Ajax Platform</a> (RAP). So far I was never very interested in frameworks around Ajax, but being an Eclipse RCP developer, RAP really caught my eye. It has a similar approach like the Google Web Toolkit (GWT): The application is developped purely in Java and it is automatically "converted" into a web application by the toolkit.<br /><br />One big difference is that RAP actually mimes the SWT API - so in principal, all you have to do to make your Eclipse RCP application a RAP application is to replace your dependency declaration from the standard Eclipse SWT bundles to the RAP bundles. Hence there is no new API to learn and code can be easily exchanged between SWT and RAP applications.<br /><br />While GWT produces lots of Javascript code to actually run most of the logic in the web browser, RAP keeps the logic inside Equinox on the server. The web browser mainly serves as a "terminal" to display the UI and to receive and send events. Although the project is still in an early stage, it is already working quite nicely as one can see at <a href="http://eclipsediscovery.yoxos.com/discovery/rap">http://eclipsediscovery.yoxos.com/discovery/rap.</a><br /><br />I am sure that this project can be of great help to quickly build complex and interactive user interfaces on the web. This can be so much more productive than working with classic web frameworks with Ajax packages on top...

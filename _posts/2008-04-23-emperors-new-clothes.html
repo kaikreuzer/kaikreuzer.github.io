@@ -1,0 +1,14 @@
+---
+layout: post
+title: The Emperor's New Clothes
+date: '2008-04-23T11:13:00.002+02:00'
+author: Kai Kreuzer
+tags:
+- Spring
+- EJB
+modified_time: '2008-04-24T13:42:31.045+02:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-3285480169470370690
+blogger_orig_url: http://kaikreuzer.blogspot.com/2008/04/emperors-new-clothes.html
+---
+
+I have been puzzled already many times about how complicated and difficult to understand some things are done in the software development world. For example, I never really fully understood the need for fully-flegded J2EE application servers for any kind of web applications. I have seen so many cases where EJBs were hardly used at all (because of their inherent complexity and their backdraws) and there existed only a set of stateless session EJBs, of course without any distribution or clustering needs.<br /><br />So from this background, I very much enjoyed a session with <a href="http://it-republik.de/jaxenter/jax/speaker.php?language=#3087-chan-brian">Brian Chan</a>, the CEO of the OS Enterprise Portal <a href="http://www.liferay.com/web/guest/home">Liferay</a>, who explained why and how the migrated their application from a pure J2EE application to a Spring-based web application running on Tomcat.<br /><br />Brian came up with a very striking analogy: He stated that the J2EE/EJB history very much resembles the tale of the <a href="http://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes">Emperor's New Clothes</a>: For years, whoever wanted to build "enterprise" applications automatically set on EJBs. There was no questioning about this - instead, it used to be a perfect selling point as nobody challanged the product's architecture; what was based on EJBs was automatically considered as good and professional. Nobody dared to admit that EJBs were bloody complex at that time and did not solve the real problems - as nobody didn't want to appear as a fool. Until Rod Johnson came around and told the world in 2004 that there are indeed ways to do enterprise applications without EJBs - he introduced Spring. So Brian rightly praised Rod for having the guts to play the child, stand up and point out that the emperor was indeed naked. This was really the advent of a big change in the people's mindset about enterprise applications. It does not mean that there is no right for J2EE applications servers to exist, but that there are many cases where there are actually better (i.e. simpler, cheaper and faster) solutions.<br /><br />Now I am just waiting for somebody pointing out that HTML is not at all the right technology for building enterprise user interfaces...

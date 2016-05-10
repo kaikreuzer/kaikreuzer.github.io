@@ -1,0 +1,17 @@
+---
+layout: post
+title: Tycho Entering the Eclipse Space
+date: '2010-04-09T12:24:00.002+02:00'
+author: Kai Kreuzer
+tags:
+- eclipse
+- p2
+- OSGi
+- Maven
+- tycho
+modified_time: '2010-04-09T12:33:18.901+02:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-7492699426205034193
+blogger_orig_url: http://kaikreuzer.blogspot.com/2010/04/tycho-entering-eclipse-space.html
+---
+
+Almost two years have passed since <a href="http://kaikreuzer.blogspot.com/2008/04/its-all-about-dependencies.html">my blog post</a> about the the discrepancy of OSGi/p2 on the one side and Maven on the other. At that time I was pessimistic that the two worlds would ever come together and the creation of the B3 project even reinforced that impression.<br /><br />Nonetheless I followed Sonatypes efforts on the Tycho front during the last year, which looked very promising. It actually already works so well that I recently changed the build of <a href="http://openhab.org/">openHAB</a> from Maven2/PaxConstruct to Maven3/Tycho - it's really cool (a blog post with details will follow soon).<br /><br />Seeing that Chris Aniszczyk has now also embraced <a href="http://aniszczyk.org/2010/01/25/egit-and-jgit-builds-available/">Tycho for the JGit/EGit builds</a> is a clear sign that Tycho (and thus Maven) is slowly being picked up in the Eclipse space.<br /><br />And the best news: Tycho has just been <a href="http://www.eclipse.org/proposals/tycho/">proposed as an Eclipse project</a>! As the proposal states, it "competes with these [Buckminster, B3, PDE Build and Athena] projects". But seeing its current stability, its ease-of-use and all its possible synergies with the existing Maven tooling, I am pretty sure that it will win the race for being the preferred future build infrastructure for Eclipse/OSGi projects.<br /><br />Kudos to Sonatype, who really put a lot of effort into this and who has torn down the barriers between the two worlds!

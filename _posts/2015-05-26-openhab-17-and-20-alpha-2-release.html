@@ -1,0 +1,59 @@
+---
+layout: post
+title: openHAB 1.7 and 2.0 alpha 2 Release
+date: '2015-05-26T00:35:00.000+02:00'
+author: Kai Kreuzer
+tags:
+- eclipse
+- openhab
+- Smart Home
+modified_time: '2015-05-28T00:37:35.761+02:00'
+thumbnail: http://2.bp.blogspot.com/-__Payo9mINI/VV8ziUGbiqI/AAAAAAAAIGU/SEsJNAvjo0k/s72-c/nestprotect.jpg
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-1493974424732406848
+blogger_orig_url: http://kaikreuzer.blogspot.com/2015/05/openhab-17-and-20-alpha-2-release.html
+excerpt_separator: <!--more-->
+---
+
+<p>The openHAB community is growing rapidly and so does the rate of contributions - it is therefore definitely time for a new release!<br />We have reached a new all-time record with a total of 160 add-ons (of which 23 are new bindings and 9 new actions) for <a href="http://www.openhab.org/downloads.html" target="_blank">openHAB 1.7</a> - you can find the full list of new features and enhancements in the <a href="https://github.com/openhab/openhab/wiki/Release-Notes-1.7" target="_blank">release notes</a>!</p>
+<!--more-->
+
+<center>
+<img border="0" height="212" src="http://2.bp.blogspot.com/-__Payo9mINI/VV8ziUGbiqI/AAAAAAAAIGU/SEsJNAvjo0k/s320/nestprotect.jpg" width="320" /><br/>
+<small>Nest Protect</small>
+</center>
+
+<p>As usual, I would like to highlight a few: First of all, there is <a href="https://github.com/openhab/openhab/wiki/Nest-Binding" target="_blank">support for Nest</a> now - not only for the thermostats, but also for Nest Protect, the smoke detector. So finally Nest can claim that it "works with openHAB" ;-) Being an open and independent platform, when mentioning Nest, there should also be Ecobee - and indeed we have a <a href="https://github.com/openhab/openhab/wiki/Ecobee-Binding" target="_blank">new binding for this</a> as well.<br />Another highlight is the <a href="https://github.com/openhab/openhab/wiki/Logitech-Harmony-Hub-Binding" target="_blank">Logitech Harmony Hub integration</a>, which is a very popular device to control all of your entertainment racks. The binding supports bi-directional communication with the hub, i.e. it can send commands as well as being informed about actions on the hub, e.g. triggered through a Harmony remote control. Other new entertainment-related bindings are for example the ones for <a href="https://github.com/idserda/openhab/wiki/Denon-Binding" target="_blank">Denon receivers</a> and for <a href="https://github.com/idserda/openhab/wiki/Plex-Binding" target="_blank">Plex</a>. If you own a pool or an alarm system, you might be as well interested in the <a href="https://github.com/openhab/openhab/wiki/Autelis-Binding" target="_blank">Autelis</a> and the <a href="https://github.com/openhab/openhab/wiki/Satel-Alarm-Binding" target="_blank">Satel</a> bindings.</p>
+
+<center><iframe allowfullscreen="" frameborder="0" height="158" src="//www.youtube.com/embed/Lc-F1rI6SdM" width="280"></iframe>
+<br/>
+<iframe allowfullscreen="" frameborder="0" height="158" src="//www.youtube.com/embed/WUcqWZzVSy8" width="280"></iframe>
+<br/>
+<iframe allowfullscreen="" frameborder="0" height="158" src="//www.youtube.com/embed/ogdgn0Dk1G8" width="280"></iframe>
+<br/>
+<iframe allowfullscreen="" frameborder="0" height="158" src="//www.youtube.com/embed/igAUFCZ-zXc" width="280"></iframe></center>
+
+<p>Besides the new bindings, there is another new feature that is targeting the developer-type of users: Besides the Xtext-based rules, it is now possible to <a href="https://github.com/openhab/openhab/wiki/Jsr223-Script-Engine" target="_blank">write rules in any JSR223-compliant scripting language</a>, like e.g. Jython. This is a really cool feature for people who prefer other languages and didn't get along with the default rule scripting syntax.<br /><h4 style="text-align: left;">openHAB 2.0 alpha 2</h4>So what about <a href="https://github.com/openhab/openhab2" target="_blank">openHAB 2</a> then? Despite the fact that it is still called an alpha release, it has made a huge step forward: Most bugs of the first alpha release have been fixed, so that the runtime is pretty stable meanwhile and already used by a few users in production. One important step was the continued work on the 1.x compatibility layer - more than 30 add-ons of openHAB 1.x have already been reported to work smoothly on the openHAB 2 runtime. Although this is a good number, it still means that less than 20% has been tested so far. So with the alpha 2 release, I would like to <a href="https://github.com/openhab/openhab2/blob/master/docs/sources/installation/compatibilitylayer.md" target="_blank">encourage all users to test their 1.x add-ons on openHAB 2</a> - once we have reached 80%, we are ready to go for a first beta.</p>
+
+<center>
+<img border="0" height="320" src="http://2.bp.blogspot.com/-ba87luJ-J1g/VWG4FRCuGbI/AAAAAAAAIGo/nz1UqeCKr7k/s320/inbox.jpg" width="236" /><br/>
+<small>Auto-discovered devices</small>
+</center>
+
+<p>
+Besides backward compatibility, the real highlights of openHAB 2 are of course the new bindings that are already implemented against the <a href="https://www.eclipse.org/smarthome/" target="_blank">Eclipse SmartHome</a> APIs. This is where most efforts took place over the past months; as a result, <a href="https://github.com/openhab/openhab2/blob/2.0.0-alpha2/docs/sources/addons.md" target="_blank">we have by now almost 20 "new" bindings</a> - besides the intial ones like for Philips Hue, LIFX, Belkin WeMo or Sonos, there is now support for AVM Fritz AHA devices, IPP-printers, eQ-3's MAX! system and more. The great thing about all these new bindings is their ease of setup: All you have to do is to launch the openHAB runtime and available devices are found automatically and ready to be used with a simple click.</p>
+
+<center>
+<img border="0" height="320" src="http://4.bp.blogspot.com/-9mgEXZfeMxI/VWLe--tA_vI/AAAAAAAAIHY/QsDYBsNPCQ8/s320/tesla.jpg" width="238" /><br/>
+<small>Charging a Tesla through openHAB</small>
+</center>
+
+<p>There is of course one exception to the rule - the new <a href="https://github.com/openhab/openhab2/blob/master/addons/binding/org.openhab.binding.tesla/README.md" target="_blank">Tesla binding</a> cannot discover your Tesla automatically :-). But besides this limitation, this binding is my personal highlight - it cannot only do the obvious things like reporting the odometer, the location and the battery charging level; no, you can now also honk the horn, adjust the sunroof and activate valet mode on your car - isn't that cool? I am just slightly disappointed that I do not have any testing hardware myself at home... As charging is an important aspect of EVs, the Tesla binding is accompanied by a binding for <a href="https://www.youtube.com/watch?v=3yYeScC41I0" target="_blank">Keba charging stations</a>.<br /><br />If you want to have a glance at openHAB 2 yourself, simply download the <a href="https://github.com/openhab/openhab2/blob/2.0.0-alpha2/docs/sources/installation/demo.md" target="_blank">demo package</a>, which comes with a few useful add-ons so that you should have an easy start.</p>
+
+<h4 style="text-align: left;">Mobile Apps</h4>
+
+<center>
+<img border="0" height="172" src="http://4.bp.blogspot.com/-txwMWXwLPN4/VWG9j8_W6iI/AAAAAAAAIG4/rBCighhJv_I/s200/android.jpg" width="200" /><br/>
+<small>Light and Dark Theme on Android app</small>
+</center>
+
+<p>I should not forget to mention that with this new release there are also updated versions of the openHAB native apps in the <a href="http://itunes.apple.com/us/app/openhab/id492054521?mt=8" target="_blank">AppStore</a>&nbsp;and the <a href="https://play.google.com/store/apps/details?id=org.openhab.habdroid" target="_blank">PlayStore</a> - these updates also bring many fixes and are compatible with openHAB 2 already. The Android app has been updated to Material design with a choice of a light and a dark theme. Furthermore, it supports already the new discovery and inbox mechanisms of openHAB 2 - more features will follow soon!</p>

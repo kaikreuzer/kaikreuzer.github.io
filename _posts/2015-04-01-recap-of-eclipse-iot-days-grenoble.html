@@ -1,0 +1,41 @@
+---
+layout: post
+title: Recap of Eclipse IoT Days Grenoble
+date: '2015-04-01T22:30:00.000+02:00'
+author: Kai Kreuzer
+tags:
+- eclipse
+- IoT
+- openhab
+- Smart Home
+modified_time: '2015-04-01T22:30:17.425+02:00'
+thumbnail: http://1.bp.blogspot.com/-I5XNC9yw-04/VRxOdJk8kEI/AAAAAAAAHzM/Wp18dmADpxw/s72-c/grenoble.jpg
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-913833183823465931
+blogger_orig_url: http://kaikreuzer.blogspot.com/2015/04/recap-of-eclipse-iot-days-grenoble.html
+header-img: "img/2015-04_grenoble.jpg"
+excerpt_separator: <!--more-->
+---
+
+<p>I just returned from two interesting days at the Université Joseph Fourier in Grenoble. The main reason for my visit were the <a href="https://wiki.eclipse.org/Eclipse_IoT_Days_Grenoble_2015" target="_blank">Eclipse IoT Days</a>, organized for the second time by the university. The event was booked out in advance and there were more than a hundred attendees and a live stream for all that did not get a ticket.</p>
+
+<center>
+<img border="0" src="http://1.bp.blogspot.com/-I5XNC9yw-04/VRxOdJk8kEI/AAAAAAAAHzM/Wp18dmADpxw/s1600/grenoble.jpg" height="114" width="800" />
+</center>
+
+<!--more-->
+
+<p>The first day was stuffed with many good talks about different IoT topics, some Eclipse-related, others not. From my perspective, the majority of the talks were about the industrial side of the Internet of Things. But besides my talk about Eclipse SmartHome, there was also Orange, who presented their <a href="http://openthebox.org/" target="_blank">OpenTheBox project</a>, which is about an OSGi-based home automation platform. In almost all talks the question of a good <a href="http://kaikreuzer.blogspot.de/2014/11/about-pitfalls-of-device-abstractions.html" target="_blank">device abstraction</a> was imminent, but nobody seems to be close to a final answer yet - as Intel's Jean-Laurent Philippe pointed out, the trough of disillusionment is right in front of us!</p>
+
+<center>
+<img border="0" src="http://3.bp.blogspot.com/-gGH4yyxORgg/VRxNC-kENBI/AAAAAAAAHzE/4LOEB2AOf0w/s1600/iothype.png" height="268" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><br/>
+<small>Source: <a href="http://en.wikipedia.org/wiki/Hype_cycle#/media/File:Gartner_Hype_Cycle.svg" target="_blank">Wikipedia</a> (under CC BY-SA 3.0)</small>
+</center>
+
+<p>The second day was reserved for workshops and I was astonished that there was so much interest in <a href="http://www.openhab.org/" target="_blank">openHAB</a>. I had to do two sessions, one in the morning and one in the afternoon. As I <a href="https://twitter.com/kaikreuzer/status/581457463666479104" target="_blank">brought a lot of hardware</a>, we tried a mini-hackathon in the morning session, working on a shared <a href="https://github.com/openhab/openhab2" target="_blank">openHAB 2</a> instance and integrate as many devices as we could. The main outcome for myself was that most hardware cannot be setup intuitively and requires quite some time. There isn't really any easy and standardized way to get devices on your network and to discover them easily afterwards - especially wifi-enabled devices, such as e.g. WeMo plugs or LIFX bulbs require specific smarthome apps and manually switching between wifi networks during the setup procedure - I am convinced that we as an industry must find much simpler ways to do this. Having learned from the morning session, I focused more on talking about the features of openHAB and showed all of this live with some exemplary devices. The attendees did the same on their computers and a group even hooked their openHAB runtime to their MQTT broker and managed to integrate their Arduino-based sensors in no time.<br /><br />Luckily, openHAB follows the principle of the <a href="http://kaikreuzer.blogspot.de/2014/02/privacy-in-smart-home-why-we-need.html" target="_blank">Intranet of Things</a> and hence it works very well offline and does not depend on an Internet connection or some cloud service. It proved to be difficult to get wired access to the Internet in the classroom, so that we decided to stay offline - this meant that we could not use devices like Nest and Netatmo, but it also nicely taught the attendees, what features might be important when choosing a smart home product or technology. Talking about offline-capabilities, I found it very interesting that SmartThings has just decided <a href="http://blog.smartthings.com/news/smartthings-updates/update-smartthings-hub-v2-hardware/" target="_blank">to move away from the cloud-controlled approach to a local controller</a>. Their reasons: "Circumventing the cloud will result in a much faster response time" and "certain automations [...] will continue to work even if you lose your Internet connection" - This is in my opinion a very strong signal against the cloud-centric approach for the smart home.<br /><br />Besides the official Eclipse IoT Day program, I had the opportunity to visit two of the university's research facilities:<br />The first one is the <a href="http://domus.liglab.fr/en" target="_blank">Platforme DOMUS</a>. This facility allows early testing of ideas with respect to the user experience. There is a small flat that is fully equipped with home automation features, stuffed with cameras and microphones, which allow to remotely observe users and their interaction with new technologies. Other rooms can be flexibly redecorated to office spaces, museums, shops etc. to allow testing user acceptance in all kinds of different segments. The interesting thing is that openHAB plays a central role in Platforme DOMUS - it serves as a flexible integration solution not only for the home automation devices, but also for monitoring and controlling the overall setup, including integration of the camera recordings. For the ones interested in the experiences with openHAB at Platforme DOMUS, note that there will be a <a href="https://www.eclipsecon.org/france2015/session/ruling-experiment-how-openhab-really-empowers-living-lab-platforms" target="_blank">session at EclipseCon France</a> in June about it.<br />The second facility is the <a href="http://air.imag.fr/index.php/Main_Page" target="_blank">FabLabAIR</a> - this is a university-owned maker space, which is open to all students, researchers and employees of the university. It reminded me a lot of the maker spaces I have <a href="http://kaikreuzer.blogspot.de/2014/10/openhab-and-eclipse-smarthome-news-flash.html" target="_blank">seen in the Silicon Valley</a> and I was indeed told that the idea of the FablabAIR was born after a visit to the <a href="http://fab.cba.mit.edu/content/tools/" target="_blank">FabLab at the MIT</a>. With the advent of the IoT, computer science students have to move away from their screens and also learn about the physical world - such maker spaces are therefore highly valuable for teaching students and driving future innovations. Since its inauguration a few years ago, the FabLabAIR has already born a successful <a href="http://www.digitale-interactive.fr/gamme-poly" target="_blank">spin-off that sells digital tables</a>. Again, I learned that openHAB plays a central role here as well: It makes it easy to integrate new products and prototypes and students and researchers can concentrate on their project, rather than dealing with infrastructure, UIs, data handling etc.</p>
+
+<center>
+<img border="0" src="http://2.bp.blogspot.com/-Wit-XNoWj2Q/VRxUiBHhv1I/AAAAAAAAHzc/7BXUnoXlY44/s1600/fablabair.jpg" height="360" width="640" /><br/>
+<small>an openHAB-controlled doll-house in FabLabAIR</small>
+</center>
+
+<p>In summary, I very much enjoyed my trip to Grenoble and I will do my best to keep openHAB as open and flexible as it is to make it useful for all current students who will be the future entrepreneurs!</p>

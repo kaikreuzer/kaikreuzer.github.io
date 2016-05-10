@@ -1,0 +1,14 @@
+---
+layout: post
+title: TLAs around SOA - is it all just hype? (Part 2)
+date: '2007-06-30T17:03:00.002+02:00'
+author: Kai Kreuzer
+tags:
+- BPEL
+- SOA
+modified_time: '2010-02-25T10:17:15.168+01:00'
+blogger_id: tag:blogger.com,1999:blog-5335810078566775677.post-5860007866618848542
+blogger_orig_url: http://kaikreuzer.blogspot.com/2007/06/tlas-around-soa-is-it-all-just-hype_30.html
+---
+
+The next TLA - well here we have a rather a rare occation of a FLA - is BPEL. Reading sales brochures, BPEL is already used everywhere and the swiss army knife for your service orchestration. Talking to Tom Baeyens at breakfast, he pointed out that he is happy that nobody really yet succeeds with SOA, so his jPDL solution has had a good chance to spread without much competition. We seem to be on the right track with our proprietary tooling at Odyssey as nobody else really has anything much more sophisticated to offer, while suffering the same problems like not being able to factor out the technical details from the model used for the graphical designer. There is no good solution yet to easily exchange the technical part of the model by another one, e.g. for a different platform. This becomes very obvious when looking at the jBoss jBPM solution: Although using a common runtime platform, there are two designers for BPEL and jPDL that are completely independent from each other. Tom agreed that it is not feasible trying to have one graphical designer that can be used to create files for different execution languages. Therefore I don't feel so bad anymore about the fact that we didn't really manage to define a platform independent model (PIM) for the graphical designers of our in-house pageflow and workflow solutions. The current BPEL tools are meant to improve the communication between IT and business by allowing business people to sketch their ideas and have the developers fill out the details. From this moment on, the BPEL artifacts are read-only for the business to have a ground for discussion, but changes should only be done by developers. In our case, where we ship a default version of a diagram, the business consultants are supposed to specify the necessary customisations for a specific customer. Our goal is therefore even higher than the usual BPEL use case. Time will tell whether this is at all a feasible approach!
