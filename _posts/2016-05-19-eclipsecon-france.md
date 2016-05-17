@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Smart Home Technology at EclipseCon France
-date: '2016-05-19T18:00:00.001+01:00'
+date: '2016-05-18T00:00:00.001+02:00'
 author: Kai Kreuzer
 tags:
 - eclipse
 - eclipsecon
 - openhab
-modified_time: '2016-05-19T18:00:00.001+01:00'
+modified_time: '2016-05-18T00:00:00.001+02:00'
 header-img: "img/2016-05_ecf.jpg"
 excerpt_separator: <!--more-->
 ---
